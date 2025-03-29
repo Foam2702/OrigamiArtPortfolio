@@ -1,155 +1,142 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
+import * as React from "react";
+import WelcomeSection from "./WelcomeSection";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import { Typography } from "@mui/material";
 
+const pages = ["Home", "Service", "Project", "Blog", "Contact"];
 
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
-function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
-
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
+function Navbar() {
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
+    <Box
+      sx={{
+        bgcolor: "primary.main",
+        position: "relative",
+      }}
+    >
+      <AppBar
+        position="static"
+        sx={(theme) => ({
+          backgroundColor: theme.palette.background.paper,
+          borderRadius: "2rem",
+          width: "83%",
+          margin: "auto",
+        })}
+      >
+        <Container
+          maxWidth="xl"
+          disableGutters
+          sx={{
+            paddingLeft: "0 !important",
+            paddingRight: "0 !important",
+          }}
+        >
+          <Toolbar disableGutters={true} sx={{ p: 0, m: 0, width: "100%" }}>
+            <IconButton sx={{ p: 0, ml: { xs: 2, md: 15 } }}>
+              <Box
+                component="img"
+                src="/src/assets/logo.svg"
+                alt="Brand Logo"
+                sx={{ width: 150, height: "auto", display: "block" }}
+              />
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{ display: { xs: 'block', md: 'none' } }}
+
+            <Box
+              sx={(theme) => ({
+                flexGrow: 1,
+                display: { xs: "none", md: "flex" },
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: theme.shape.borderRadius, // ✅ Use theme shape
+              })}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
-                </MenuItem>
+                <Button
+                  key={page}
+                  sx={(theme) => ({
+                    mx: 10,
+                    color: theme.palette.text.primary,
+                    // fontFamily: theme.typography.fontFamily,
+                  })}
+                >
+                  <Typography variant="h4" sx={{ textTransform: "none" }}>
+                    {page}
+                  </Typography>
+                </Button>
               ))}
-            </Menu>
-          </Box>
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+            </Box>
+            <Button variant="contained" sx={{ borderRadius: "2rem", mr: 2 }}>
+              <Typography variant="h5" sx={{ textTransform: "none" }}>
+                Get started
+              </Typography>
+            </Button>
+          </Toolbar>
+        </Container>
+      </AppBar>
+      <WelcomeSection />
+
+      <Box
+        sx={{
+          zIndex: 1,
+          position: "absolute",
+          top: "60%", // Center it vertically
+          left: "15%",
+        }}
+      >
+        <Typography
+          variant="h4"
+          sx={{
+            color: "white",
+            maxWidth: "20vw",
+            textAlign: "right", // Maintain width consistency
+          }}
+        >
+          We design and develop stunning digital experiences tailored to your
+          needs
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          zIndex: 1,
+          position: "absolute",
+          top: "77%", // Center it vertically
+          left: "25%",
+        }}
+      >
+        <Typography
+          variant="h1"
+          sx={{
+            color: "#1F2227",
+            fontSize: "64px",
+            // Maintain width consistency
+          }}
+        >
+          Welcome to
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          zIndex: 1,
+          position: "absolute",
+          top: "86%", // Center it vertically
+          right: "52%",
+        }}
+      >
+        <Typography
+          variant="h1"
+          sx={{
+            color: "white",
+            fontSize: "72px",
+          }}
+        >
+          ORIGAMI STUDIO
+        </Typography>
+      </Box>
+    </Box>
   );
 }
-export default ResponsiveAppBar;
+export default Navbar;
