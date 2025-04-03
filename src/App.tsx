@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Service from "./pages/Service/Service";
+import Contact from "./pages/Contact/Contact";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./styles/theme.tsx";
@@ -26,6 +27,14 @@ function App() {
             element={
               <MainLayout>
                 <Service />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <MainLayout>
+                <Contact />
               </MainLayout>
             }
           />

@@ -6,7 +6,7 @@ const ZetaMiniApp = () => {
     <div className={styles.zetaSection}>
       <div className={styles.zetaLeft}>
         <img
-          src="/src/assets/zeta_app.svg"
+          src="/src/assets/service_5.svg"
           alt="Zeta Mini App showcase"
           className={styles.zetaImage}
         />

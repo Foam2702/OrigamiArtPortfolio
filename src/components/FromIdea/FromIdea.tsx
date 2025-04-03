@@ -13,7 +13,7 @@ const FromIdea = () => {
       number: "02",
       title: "LET'S TALK & STRATEGIZE",
       description:
-        "Well chat about your project scope, timeline, and budget. Together, well craft a plan that fits your needs perfectly.",
+        "We'll chat about your project scope, timeline, and budget. Together, we'll craft a plan that fits your needs perfectly.",
     },
     {
       number: "03",
@@ -37,10 +37,16 @@ const FromIdea = () => {
 
   return (
     <div className={styles.fromIdeaSection}>
-      <div className={styles.header}>
-        <div className={styles.titleContainer}>
-          <span className={styles.fromText}>FROM IDEA</span>
-          <span className={styles.toText}>TO REALITY</span>
+      <div className={styles.titleContainer}>
+        <div className={styles.fromBox}>
+          FROM IDEA
+          <div className={styles.blackCircle} />
+        </div>
+        <div className={styles.blackCircle} />
+        <div className={styles.redCircle} />
+        <div className={styles.toBox}>
+          <div className={styles.redCircle} />
+          TO REALITY
         </div>
       </div>
 

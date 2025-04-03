@@ -6,7 +6,7 @@ const BrandingDesign = () => {
     <div className={styles.brandingSection}>
       <div className={styles.brandingLeft}>
         <img
-          src="/src/assets/branding_showcase.svg"
+          src="/src/assets/service_6.svg"
           alt="Branding Design showcase"
           className={styles.brandingImage}
         />
