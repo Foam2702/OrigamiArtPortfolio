@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Service from "./pages/Service/Service";
 import Contact from "./pages/Contact/Contact";
+import Project from "./pages/Project/Project";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./styles/theme.tsx";
@@ -35,6 +36,14 @@ function App() {
             element={
               <MainLayout>
                 <Contact />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/project"
+            element={
+              <MainLayout>
+                <Project />
               </MainLayout>
             }
           />
