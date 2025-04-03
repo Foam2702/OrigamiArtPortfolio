@@ -1,0 +1,99 @@
+.container {
+    background-color: #CA3227;
+    padding: 6rem 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 600;
+    border: 3px solid #fff;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+}
+
+.cardsContainer {
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.cardWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardImage {
+    position: absolute;
+    width: 45%;
+    height: auto;
+    object-fit: contain;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.cardImage.left {
+    left: -10%;
+}
+
+.cardImage.right {
+    right: -10%;
+}
+
+.cardContent {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 3rem;
+    width: 65%;
+    position: relative;
+    z-index: 1;
+}
+
+.cardContent.left {
+    margin-left: auto;
+}
+
+.cardContent.right {
+    margin-right: auto;
+}
+
+.cardContent.dark {
+    background-color: #1F2227;
+}
+
+.cardTitle {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.cardTitle.light {
+    color: #000;
+}
+
+.cardTitle.dark {
+    color: #fff;
+}
+
+.cardDescription {
+    opacity: 0.9;
+}
+
+.cardDescription.light {
+    color: #000;
+}
+
+.cardDescription.dark {
+    color: #fff;
+}

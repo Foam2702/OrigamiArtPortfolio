@@ -1,0 +1,91 @@
+.container {
+    width: 85%;
+    margin: 0.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.backgroundImage {
+    height: 89vh;
+    width: auto;
+    position: relative;
+    z-index: 0;
+}
+
+.smallCircle {
+    width: 15.2vw;
+    height: 15.2vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 13%;
+    left: 40%;
+    z-index: 1;
+}
+
+.largeCircle {
+    width: 24.9vw;
+    height: 24.9vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: 2;
+}
+
+.laptop {
+    width: 65%;
+    height: auto;
+    position: absolute;
+    left: 32%;
+    bottom: 20%;
+    z-index: 3;
+}
+
+.seed {
+    width: 11vw;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    z-index: 4;
+}
+
+.popupTrigger {
+    width: 2.98vw;
+    height: 2.98vw;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.popupContainer {
+    width: 16vw;
+    height: auto;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    z-index: 4;
+}
+
+.popupImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.popupText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: left;
+    width: 75%;
+}

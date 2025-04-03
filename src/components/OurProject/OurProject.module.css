@@ -1,0 +1,106 @@
+.container {
+    background-color: #1F2227;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    margin-bottom: 3rem;
+}
+
+.title {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px dashed #3498db;
+    border-radius: 30px;
+}
+
+.arrowButton {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 4rem;
+}
+
+.projectCard {
+    background: #2A2E35;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-10px);
+}
+
+.projectImage {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.projectInfo {
+    padding: 1.5rem;
+}
+
+.projectTitle {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tagContainer {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.bottomDecoration {
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(45deg, #1F2227 25%, transparent 25%),
+        linear-gradient(-45deg, #1F2227 25%, transparent 25%);
+    background-size: 30px 30px;
+    position: absolute;
+    bottom: 0;
+}

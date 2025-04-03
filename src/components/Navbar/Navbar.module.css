@@ -1,0 +1,79 @@
+.container {
+    position: relative;
+}
+
+.appBar {
+    border-radius: 2rem;
+    width: 83%;
+    margin: auto;
+}
+
+.toolbar {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.menuContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .menuContainer {
+        display: none;
+    }
+}
+
+.menuButton {
+    margin: 0 5px;
+}
+
+.menuText {
+    text-transform: none;
+}
+
+.getStartedButton {
+    border-radius: 2rem;
+    margin-right: 2rem;
+}
+
+.getStartedText {
+    text-transform: none;
+}
+
+.welcomeText {
+    color: white;
+    max-width: 20vw;
+    text-align: right;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    z-index: 1;
+}
+
+.welcomeTitle {
+    color: #1F2227;
+    font-size: 64px;
+    position: absolute;
+    top: 77%;
+    left: 25%;
+    z-index: 1;
+}
+
+.studioTitle {
+    color: white;
+    font-size: 72px;
+    position: absolute;
+    top: 86%;
+    right: 52%;
+    z-index: 1;
+}

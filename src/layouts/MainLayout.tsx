@@ -1,6 +1,6 @@
 import { Container, Box } from "@mui/material";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 type MainLayoutProps = { children: React.ReactNode };
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
@@ -21,10 +21,13 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       {/* ✅ Main Content Area */}
       <Container
         component="main"
+        maxWidth={false}
         sx={{
-          flexGrow: 1, // Pushes footer to bottom
-          mt: 4,
-          mb: 4,
+          flexGrow: 1,
+          padding: 0,
+          width: "100%",
+          paddingLeft: "0 !important",
+          paddingRight: "0 !important", // Đảm bảo full width
         }}
       >
         {children}
