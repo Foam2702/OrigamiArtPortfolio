@@ -8,13 +8,15 @@ import FromIdea from "../../components/FromIdea/FromIdea";
 const Service = () => {
   return (
     <div className={styles.container}>
+      <h1 className={styles.title}>
+        CURIOUS ABOUT
+        <br />
+        OUR SERVICE?
+      </h1>
+
       <div className={styles.headerSection}>
+        {/* Left Side */}
         <div className={styles.leftSide}>
-          <h1 className={styles.title}>
-            CURIOUS ABOUT
-            <br />
-            OUR SERVICE?
-          </h1>
           <div className={styles.leftContent}>
             <h2 className={styles.subtitle}>
               TRANSFORM YOUR
@@ -29,7 +31,8 @@ const Service = () => {
           </div>
         </div>
 
-        <div className={styles.rightSide}>
+        {/* Middle Section */}
+        <div className={styles.middleSection}>
           <div className={styles.imageContainer}>
             <img src="/src/assets/service_1.svg" alt="Developer working" />
           </div>
@@ -42,7 +45,10 @@ const Service = () => {
               alt="Development environment"
             />
           </div>
+        </div>
 
+        {/* Right Side */}
+        <div className={styles.rightSide}>
           <div className={styles.brandingContent}>
             <h2 className={styles.brandingTitle}>BRANDING BRILLIANCE</h2>
             <p className={styles.brandingDescription}>

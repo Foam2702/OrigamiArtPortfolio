@@ -28,7 +28,7 @@
 }
 
 .titleBox:last-child {
-    border: 2px solid #E84C3D;
+    border: 2px solid #CA3227;
 }
 
 .blackCircle {
@@ -41,7 +41,7 @@
 .redCircle {
     width: 12px;
     height: 12px;
-    border: 2px solid #E84C3D;
+    border: 2px solid #CA3227;
     border-radius: 50%;
 }
 
@@ -83,7 +83,7 @@
 .projectContent {
     flex: 1;
     padding: 3rem;
-    background: #E84C3D;
+    background: #CA3227;
     color: white;
 }
 
@@ -104,7 +104,7 @@
 .tag {
     padding: 0.5rem 1.5rem;
     background: white;
-    color: #E84C3D;
+    color: #CA3227;
     border-radius: 50px;
     font-size: 1rem;
     font-weight: 600;
@@ -151,7 +151,7 @@
     display: inline-block;
     padding: 0.75rem 2rem;
     background: white;
-    color: #E84C3D;
+    color: #CA3227;
     border: none;
     border-radius: 50px;
     font-weight: 600;

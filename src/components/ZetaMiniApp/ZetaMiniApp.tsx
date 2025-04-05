@@ -5,14 +5,6 @@ const ZetaMiniApp = () => {
   return (
     <div className={styles.zetaSection}>
       <div className={styles.zetaLeft}>
-        <img
-          src="/src/assets/service_5.svg"
-          alt="Zeta Mini App showcase"
-          className={styles.zetaImage}
-        />
-      </div>
-
-      <div className={styles.zetaRight}>
         <h2 className={styles.zetaTitle}>Zeta Mini App</h2>
         <p className={styles.zetaDescription}>
           We create mini-apps that pack a punch! Our solutions are designed to
@@ -35,6 +27,14 @@ const ZetaMiniApp = () => {
             </span>
           </li>
         </ul>
+      </div>
+
+      <div className={styles.zetaRight}>
+        <img
+          src="/src/assets/service_5.svg"
+          alt="Zeta Mini App showcase"
+          className={styles.zetaImage}
+        />
       </div>
     </div>
   );

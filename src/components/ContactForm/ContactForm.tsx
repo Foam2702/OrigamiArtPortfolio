@@ -44,11 +44,88 @@ const ContactForm = () => {
         <h2 className={styles.mainTitle}>
           YOU NEED A WEBSITE FOR YOUR BUSINESS?
         </h2>
+        <h3 className={styles.subTitle}>YOU HAVE A GREAT IDEA</h3>
         <h3 className={styles.subTitle}>BUT DON'T KNOW WHERE TO START?</h3>
       </div>
 
       <h1 className={styles.formTitle}>TELL US ABOUT IT</h1>
 
+      {/* <form className={styles.form} onSubmit={handleSubmit}>
+        <div className={styles.inputGroup}>
+          <label htmlFor="name" className={styles.label}>
+            Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            className={styles.input}
+            placeholder="Your name"
+          />
+        </div>
+
+        <div className={styles.inputGroup}>
+          <label htmlFor="email" className={styles.label}>
+            Your email
+          </label>
+          <input
+            type="email"
+            id="email"
+            className={styles.input}
+            placeholder="abc@yourmail.com"
+          />
+        </div>
+
+        <div className={styles.interestSection}>
+          <label className={styles.label}>I'm interested in..</label>
+          <div className={styles.tags}>
+            {interests.map((interest) => (
+              <div
+                key={interest.id}
+                className={`${styles.tag} ${
+                  selectedInterests.includes(interest.id)
+                    ? styles.tagSelected
+                    : ""
+                }`}
+                onClick={() => toggleInterest(interest.id)}
+              >
+                {interest.label}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className={styles.budgetSection}>
+          <label className={styles.label}>Project budget</label>
+          <div className={styles.budgetTags}>
+            {budgets.map((budget) => (
+              <div
+                key={budget.id}
+                className={`${styles.tag} ${
+                  selectedBudget === budget.id ? styles.tagSelected : ""
+                }`}
+                onClick={() => setSelectedBudget(budget.id)}
+              >
+                {budget.label}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className={styles.inputGroup}>
+          <label htmlFor="message" className={styles.label}>
+            Tell us more about your project
+          </label>
+          <textarea
+            id="message"
+            className={styles.textarea}
+            placeholder="We're always here to support"
+          />
+        </div>
+
+        <button type="submit" className={styles.submitButton}>
+          Submit
+        </button>
+      </form> */}
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.inputGroup}>
           <label htmlFor="name" className={styles.label}>

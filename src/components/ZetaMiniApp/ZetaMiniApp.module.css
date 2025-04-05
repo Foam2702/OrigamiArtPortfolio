@@ -7,13 +7,10 @@
 }
 
 .zetaLeft {
-    position: relative;
-    background: #FFE4E1;
     border-radius: 24px;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 3rem;
+    color: white;
+    background: #CA3227;
 }
 
 .zetaImage {
@@ -24,10 +21,14 @@
 }
 
 .zetaRight {
-    background: #E84C3D;
+
+    background: #FFE4E1;
+    position: relative;
     border-radius: 24px;
-    padding: 3rem;
-    color: white;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .zetaTitle {

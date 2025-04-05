@@ -1,42 +1,53 @@
 .container {
-    background-color: #E84C3D;
+    background-color: #CA3227;
     padding: 4rem;
     border-radius: 24px;
     color: white;
-    max-width: 800px;
     margin: 0 auto;
+    width: 83%;
 }
 
 .header {
-    text-align: right;
+    text-align: left;
     margin-bottom: 2rem;
 }
 
 .mainTitle {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
 .subTitle {
-    font-size: 1.25rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
+    text-align: right;
 }
 
 .formTitle {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     text-align: center;
+    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
 .form {
-    max-width: 500px;
+    /* max-width: 500px;
+    margin: 0 auto; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.inputGroup {
-    margin-bottom: 2rem;
+.inputGroup {}
+
+.inputGroup,
+.submitButton {
+    grid-column: span 2;
+    /* Span both columns */
 }
 
 .label {
@@ -81,17 +92,25 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .tag:hover,
 .tagSelected {
     background-color: white;
-    color: #E84C3D;
+    color: #CA3227;
 }
 
 .budgetSection {
     margin-bottom: 2rem;
 }
+
+.budgetSection,
+.interestSection {
+    flex: 1;
+}
+
+
 
 .budgetTags {
     display: grid;
@@ -127,7 +146,7 @@
     margin: 3rem auto 0;
     padding: 1rem 3rem;
     background-color: white;
-    color: #E84C3D;
+    color: #CA3227;
     border: none;
     border-radius: 50px;
     font-size: 1.2rem;

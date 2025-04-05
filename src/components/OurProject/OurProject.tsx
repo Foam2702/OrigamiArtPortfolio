@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import styles from "./OurProject.module.css";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import EastIcon from "@mui/icons-material/East";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 interface ProjectCardProps {
@@ -13,7 +13,7 @@ const ProjectCard = ({ title, image, tags }: ProjectCardProps) => {
   const navigate = useNavigate(); // Initialize useNavigate
 
   const handleCardClick = () => {
-    navigate(`/projects`); // Redirect to project page
+    navigate(`/project`); // Redirect to project page
   };
   return (
     <div className={styles.projectCard} onClick={handleCardClick}>
@@ -33,6 +33,7 @@ const ProjectCard = ({ title, image, tags }: ProjectCardProps) => {
 };
 
 const OurProject = () => {
+  const navigate = useNavigate();
   const projects = [
     {
       title: "HÔME NÀO",
@@ -50,15 +51,17 @@ const OurProject = () => {
       tags: ["UI/UX"],
     },
   ];
-
+  const handleArrowClick = () => {
+    navigate("/project"); // Redirect to the Project page
+  };
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <Typography component="h2" className={styles.title}>
+        <Typography variant="h2" className={styles.title}>
           Our project
         </Typography>
-        <div className={styles.arrowButton}>
-          <ArrowForwardIcon />
+        <div className={styles.arrowButton} onClick={handleArrowClick}>
+          <EastIcon style={{ fontSize: "5rem" }} />
         </div>
       </div>
 

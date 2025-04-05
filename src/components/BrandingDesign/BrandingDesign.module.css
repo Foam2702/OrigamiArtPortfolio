@@ -10,7 +10,6 @@
     position: relative;
     background: #FFE4E1;
     border-radius: 24px;
-    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,13 +17,12 @@
 
 .brandingImage {
     width: 100%;
-    max-width: 400px;
     height: auto;
     display: block;
 }
 
 .brandingRight {
-    background: #E84C3D;
+    background: #CA3227;
     border-radius: 24px;
     padding: 3rem;
     color: white;

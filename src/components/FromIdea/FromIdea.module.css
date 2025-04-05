@@ -24,7 +24,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background: #E84C3D;
+    background: #CA3227;
     bottom: -1rem;
 }
 
@@ -45,8 +45,8 @@
 }
 
 .toBox {
-    border: 2px solid #E84C3D;
-    color: #E84C3D;
+    border: 2px solid #CA3227;
+    color: #CA3227;
 }
 
 .circle {
@@ -64,7 +64,7 @@
 
 .redCircle {
     composes: circle;
-    border: 2px solid #E84C3D;
+    border: 2px solid #CA3227;
     background: white;
 }
 
@@ -85,7 +85,7 @@
 .stepNumber {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #E84C3D;
+    color: #CA3227;
     line-height: 1;
     flex-shrink: 0;
     width: 60px;

@@ -1,4 +1,5 @@
 import styles from "./Blog.module.css";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 interface BlogPost {
   image: string;
@@ -51,18 +52,22 @@ const Blog = () => {
     date: "MAR 2025",
     title: "HOW TO MAKE YOUR WEBSITE LOOK BETTER?",
   };
+  const navigate = useNavigate(); // Initialize useNavigate
 
+  const handleFeaturedClick = () => {
+    navigate("/blog"); // Redirect to the Blog page
+  };
   return (
     <section className={styles.container}>
       <div className={styles.leftSection}>
-        <h2 className={styles.header}>Blog</h2>
-        <div className={styles.blogList}>
+        <h1 className={styles.header}>Blog</h1>
+        <div className={styles.blogList} onClick={handleFeaturedClick}>
           {blogPosts.map((post, index) => (
             <BlogItem key={index} {...post} />
           ))}
         </div>
       </div>
-      <div className={styles.featuredPost}>
+      <div className={styles.featuredPost} onClick={handleFeaturedClick}>
         <img
           src={featuredPost.image}
           alt={featuredPost.title}

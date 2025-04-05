@@ -28,7 +28,7 @@
 }
 
 .titleBox:last-child {
-    border: 2px solid #E84C3D;
+    border: 2px solid #CA3227;
 }
 
 .blackCircle {
@@ -41,7 +41,7 @@
 .redCircle {
     width: 12px;
     height: 12px;
-    border: 2px solid #E84C3D;
+    border: 2px solid #CA3227;
     border-radius: 50%;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .category {
-    background: #E84C3D;
+    background: #CA3227;
     color: white;
     padding: 0.25rem 1rem;
     border-radius: 50px;
@@ -137,8 +137,8 @@
 
 .readMoreButton {
     background: transparent;
-    color: #E84C3D;
-    border: 2px solid #E84C3D;
+    color: #CA3227;
+    border: 2px solid #CA3227;
     padding: 0.5rem 1.25rem;
     border-radius: 50px;
     font-weight: 600;
@@ -148,7 +148,7 @@
 }
 
 .readMoreButton:hover {
-    background: #E84C3D;
+    background: #CA3227;
     color: white;
     transform: translateY(-2px);
 }

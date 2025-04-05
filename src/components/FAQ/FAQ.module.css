@@ -2,12 +2,19 @@
     padding: 4rem;
     max-width: 800px;
     margin: 0 auto;
+
+    /* Center the text */
 }
 
 .header {
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    /* Align items to the sides */
+    align-items: center;
+    gap: 3rem;
     margin-bottom: 3rem;
+    width: 100%;
+    /* Ensure full width */
 }
 
 .questionPill {
@@ -20,14 +27,20 @@
 
 .redPill {
     composes: questionPill;
-    border: 2px solid #E84C3D;
-    color: #E84C3D;
+    border: 2px solid #CA3227;
+    color: #CA3227;
+    transform: rotate(-10deg);
+    padding: 1rem 3rem;
+    /* Increase padding */
+    font-size: 2.5rem;
+    /* Increase font size */
 }
 
 .blackPill {
     composes: questionPill;
     border: 2px solid #1F2227;
     color: #1F2227;
+    transform: rotate(10deg);
 }
 
 .faqList {
