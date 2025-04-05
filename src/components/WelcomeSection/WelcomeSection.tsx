@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { useState } from "react";
 import styles from "./WelcomeSection.module.css";
+import theme from "../../styles/theme";
 
 const WelcomeSection = () => {
   const [showPopup, setShowPopup] = useState(false);

@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import Service from "./pages/Service/Service";
 import Contact from "./pages/Contact/Contact";
 import Project from "./pages/Project/Project";
+import Blog from "./pages/Blog/Blog";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./styles/theme.tsx";
@@ -44,6 +45,14 @@ function App() {
             element={
               <MainLayout>
                 <Project />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/blog"
+            element={
+              <MainLayout>
+                <Blog />
               </MainLayout>
             }
           />
