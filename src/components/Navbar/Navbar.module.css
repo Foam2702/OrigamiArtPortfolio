@@ -1,19 +1,21 @@
 .container {
-    position: relative;
-    width: 83%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .appBar {
     border-radius: 2rem;
-
-    margin: auto;
+    width: 83% !important;
 }
 
 .toolbar {
     padding: 0;
     margin: 0;
-    width: 100%;
+
 }
 
 .logo {
@@ -41,10 +43,11 @@
 
 .menuText {
     text-transform: none;
+
 }
 
 .getStartedButton {
-    border-radius: 2rem;
+    border-radius: 2rem !important;
     margin-right: 2rem;
 }
 
@@ -67,7 +70,7 @@
     font-size: 64px;
     position: absolute;
     top: 77%;
-    left: 25%;
+    left: 28%;
     z-index: 1;
 }
 

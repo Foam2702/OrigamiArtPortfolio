@@ -1,6 +1,6 @@
 .container {
     background-color: #CA3227;
-    padding: 6rem 0;
+    padding: 1rem 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
     position: relative;
     width: 100%;
     max-width: 1200px;
-    margin: 3rem auto;
+    margin: 2rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,7 +36,7 @@
 
 .cardImage {
     position: absolute;
-    width: 45%;
+    width: 30%;
     height: auto;
     object-fit: contain;
     top: 50%;
@@ -45,28 +45,31 @@
 }
 
 .cardImage.left {
-    left: -10%;
+    right: 45rem;
+
 }
 
 .cardImage.right {
-    right: -10%;
+    left: 60rem;
+    top: 2rem
 }
 
 .cardContent {
     background-color: #fff;
-    border-radius: 30px;
-    padding: 3rem;
-    width: 65%;
+    border-radius: 65px;
+    padding: 2rem;
+    width: 40%;
     position: relative;
     z-index: 1;
+    text-align: left;
 }
 
 .cardContent.left {
-    margin-left: auto;
+    margin-left: 15rem;
 }
 
 .cardContent.right {
-    margin-right: auto;
+    margin-right: -10rem;
 }
 
 .cardContent.dark {
@@ -96,4 +99,10 @@
 
 .cardDescription.dark {
     color: #fff;
+}
+
+.largeImage {
+    width: 40%;
+
+    max-width: none;
 }
