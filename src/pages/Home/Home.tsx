@@ -1,4 +1,3 @@
-import React from "react";
 import MarqueeBox from "../../components/MaqueeBox/MaqueeBox";
 import styles from "./Home.module.css";
 import { Box } from "@mui/material";

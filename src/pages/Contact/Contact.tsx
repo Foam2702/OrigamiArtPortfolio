@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Contact.module.css";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";

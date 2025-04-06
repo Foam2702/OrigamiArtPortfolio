@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Service.module.css";
 import WebDesign from "../../components/WebDesign/WebDesign";
 import ZetaMiniApp from "../../components/ZetaMiniApp/ZetaMiniApp";

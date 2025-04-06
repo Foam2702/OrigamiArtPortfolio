@@ -1,4 +1,3 @@
-import * as React from "react";
 import WelcomeSection from "../WelcomeSection/WelcomeSection";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
